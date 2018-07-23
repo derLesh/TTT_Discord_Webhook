@@ -4,7 +4,6 @@ j = require("json")
 
 webhookURL = "https://discordapp.com/api/webhooks/XXX"
 local DiscordWebhook = DiscordWebhook or {}
-
 local addonName = "[Discord-Webhook]"
 
 if SERVER then
