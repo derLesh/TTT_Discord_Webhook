@@ -26,7 +26,7 @@ function DiscordWebhook:CheckRole( ply )
 end
 
 function DiscordWebhook:BuildMessage( ply, text )
-    msg = util:TableToJSON( {
+    msg = j.encode( {
         embeds = { 
             description = text, 
             author = { 
