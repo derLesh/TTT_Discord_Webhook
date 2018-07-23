@@ -1,8 +1,10 @@
 AddCSLuaFile()
 
-j = require("json")
+require "json"
+local j = json
 
-webhookURL = "https://discordapp.com/api/webhooks/XXX"
+
+webhookURL = "https://discordapp.com/api/webhooks/468473397668741128/EV96GaLdWZ6o1Bl0voC7pSlhkXj47WCQG6Fev-VApBnGS4609QvxZRX0c1qc8qX-pieg"
 local DiscordWebhook = DiscordWebhook or {}
 local addonName = "[Discord-Webhook]"
 
@@ -38,7 +40,7 @@ end
 
 hook.Add( "PlayerSay", "SendMsg", function( ply, msg )
     fMsg = {
-        content = BuildMessage:msg(ply, msg),
+        content = DiscordWebhook:BuildMessage(ply, msg),
         username = "TTT-Log",
     }
     http.Post(webhookURL, t_post)
