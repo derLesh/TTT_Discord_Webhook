@@ -4,7 +4,7 @@ require "json"
 local j = json
 
 
-webhookURL = "https://discordapp.com/api/webhooks/468473397668741128/EV96GaLdWZ6o1Bl0voC7pSlhkXj47WCQG6Fev-VApBnGS4609QvxZRX0c1qc8qX-pieg"
+webhookURL = "https://discordapp.com/api/webhooks/XXX"
 local DiscordWebhook = DiscordWebhook or {}
 local addonName = "[Discord-Webhook]"
 
